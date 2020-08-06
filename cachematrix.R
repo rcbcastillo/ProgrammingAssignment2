@@ -50,8 +50,7 @@ minver<-x$getinver()
         message('you will save some time getting the value from cache')
         return(minver)
     }
-## If the calculation has not been done yet
-## then the calculation of the inverse matrix is done by using the "solve" function
+## If the calculation has not been done yet, then the calculation of the inverse matrix (minver) is done by using the "solve" function
     data<-x$get()
     minver<-solve(data, ...)
 ## the setting (x$setinver) function will set the value of the inverse matrix in the cache
